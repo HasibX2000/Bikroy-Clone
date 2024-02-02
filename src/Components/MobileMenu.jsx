@@ -13,7 +13,7 @@ import CloseIcon from "../assets/close.png";
 
 const MobileMenu = ({ show, setShow }) => {
   return (
-    <div className="absolute left-0 top-0 w-screen flex transition-all translate-x-0 ease-in-out duration-[3s]">
+    <div className="absolute left-0 top-0 w-screen flex lg:hidden transition-all translate-x-0 ease-in-out duration-[3s] overflow-x-hidden">
       <div className="w-2/3 bg-blackBrand h-screen py-3 relative">
         <ul className="p-4">
           <li className="mb-4 ml-2">

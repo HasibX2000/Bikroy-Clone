@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
 
 const Header = () => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   return (
     <nav className="flex justify-between py-2.5 ">
       <div className="flex gap-4 items-center">
@@ -21,7 +21,7 @@ const Header = () => {
           <img src={BikroyLogo} alt="Bikroy Logo" className="mr-4" />
         </Link>
         <Link>
-          <span className="text-white font-semibold text-sm hidden md:block">
+          <span className="text-white font-bold text-sm hidden md:block">
             All ads
           </span>
         </Link>
@@ -32,11 +32,11 @@ const Header = () => {
       <div className="flex gap-5">
         <Link className="flex gap-2 items-center text-white text-sm">
           <img className="w-8" src={ChatIcon} alt="Chat Icon" />{" "}
-          <span className="hidden md:block">Chat</span>
+          <span className="hidden text-xs md:block">Chat</span>
         </Link>
         <Link className="flex gap-2 items-center text-white text-sm">
           <img className="w-8" src={LoginIcon} alt="Login Icon" />{" "}
-          <span className="hidden md:block">Login</span>
+          <span className="hidden text-xs md:block">Login</span>
         </Link>
         <button className="uppercase bg-yellowBrand px-3 text-sm rounded font-semibold text-grayBrand py-2.5 hidden md:block">
           Post your ad
