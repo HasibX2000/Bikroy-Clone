@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "Mobiles",
+    "ads": 58814,
+    "icon": "./images/mobile.svg"
+  },
+  {
+    "id": 2,
+    "title": "Electronics",
+    "ads": 52814,
+    "icon": "./images/electronics.svg"
+  },
+  {
+    "id": 3,
+    "title": "Vehicles",
+    "ads": 42814,
+    "icon": "./images/vehicles.svg"
+  },
+  {
+    "id": 4,
+    "title": "Property",
+    "ads": 42814,
+    "icon": "./images/property.svg"
+  },
+  {
+    "id": 5,
+    "title": "Home & Living",
+    "ads": 42814,
+    "icon": "./images/home.svg"
+  },
+  {
+    "id": 6,
+    "title": "Pets & Animals",
+    "ads": 42814,
+    "icon": "./images/pets.svg"
+  },
+  {
+    "id": 7,
+    "title": "Men's Fashion & Grooming",
+    "ads": 42814,
+    "icon": "./images/mensfashion.svg"
+  },
+  {
+    "id": 8,
+    "title": "Women's Fashion & Beauty",
+    "ads": 42814,
+    "icon": "./images/womensfashion.svg"
+  },
+  {
+    "id": 9,
+    "title": "Hobbies, Sports & Kids",
+    "ads": 42814,
+    "icon": "./images/sports.svg"
+  },
+  {
+    "id": 10,
+    "title": "Business & Industry",
+    "ads": 42814,
+    "icon": "./images/business.svg"
+  },
+  {
+    "id": 11,
+    "title": "Essential",
+    "ads": 42814,
+    "icon": "./images/essentials.svg"
+  },
+  {
+    "id": 12,
+    "title": "Education",
+    "ads": 42814,
+    "icon": "./images/education.svg"
+  },
+  {
+    "id": 13,
+    "title": "Services",
+    "ads": 42814,
+    "icon": "./images/services.svg"
+  },
+  {
+    "id": 14,
+    "title": "Jobs",
+    "ads": 42814,
+    "icon": "./images/jobs.svg"
+  },
+  {
+    "id": 15,
+    "title": "Agriculture",
+    "ads": 42814,
+    "icon": "./images/agriculture.svg"
+  },
+  {
+    "id": 16,
+    "title": "Overseas Jobs",
+    "ads": 42814,
+    "icon": "./images/jobs-overseas.svg"
+  }
+]
