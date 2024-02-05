@@ -10,7 +10,7 @@ const CategoryCard = ({ category }) => {
       </div>
       <div className=" text-center md:text-left">
         <h2 className="font-normal text-md text-[#2f3432]">{title}</h2>
-        <p className="text-xs font-light text-[#2f3432]">{ads} ads</p>
+        <p className="text-xs font-light text-[#5a5a5a]">{ads} ads</p>
       </div>
     </div>
   );

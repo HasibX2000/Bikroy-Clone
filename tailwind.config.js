@@ -21,6 +21,7 @@ export default {
         blackBrand: "#424E4E",
         graytwoBrand: "#AFB7AD",
         brandTwo: "#10846F",
+        pureBlack: "#2f3432",
       },
     },
   },
