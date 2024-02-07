@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import Hero from "../Components/Hero";
 import Category from "../Components/Category";
 import TestimonialCard from "../Components/TestimonialCard";
+import QuickLinks from "../Components/QuickLinks";
 
 const Homepage = () => {
   return (
@@ -17,6 +18,7 @@ const Homepage = () => {
         <span className="p-5 mt-16 block"></span>
         <Category />
         <TestimonialCard />
+        <QuickLinks />
       </div>
     </div>
   );
