@@ -4,6 +4,7 @@ import Hero from "../Components/Hero";
 import Category from "../Components/Category";
 import TestimonialCard from "../Components/TestimonialCard";
 import QuickLinks from "../Components/QuickLinks";
+import AboutBikroy from "../Components/AboutBikroy";
 
 const Homepage = () => {
   return (
@@ -19,6 +20,7 @@ const Homepage = () => {
         <Category />
         <TestimonialCard />
         <QuickLinks />
+        <AboutBikroy />
       </div>
     </div>
   );
