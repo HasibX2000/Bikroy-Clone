@@ -77,14 +77,14 @@ const AboutBikroy = () => {
       {show ? (
         <div
           onClick={() => setShow(!show)}
-          className="text-blackBrand text-md flex items-center gap-2 mt-5"
+          className="text-blackBrand bg-white text-md flex items-center justify-center md:justify-start gap-2 mt-5"
         >
           Show less <span className="bi bi-chevron-up "></span>
         </div>
       ) : (
         <div
           onClick={() => setShow(!show)}
-          className="text-blackBrand text-md flex items-center gap-2 mt-5"
+          className="text-blackBrand bg-white text-md flex items-center justify-center md:justify-start gap-2 mt-5"
         >
           Show More <span className="bi bi-chevron-down "></span>
         </div>

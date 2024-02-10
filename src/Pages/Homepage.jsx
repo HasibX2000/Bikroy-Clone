@@ -5,6 +5,7 @@ import Category from "../Components/Category";
 import TestimonialCard from "../Components/TestimonialCard";
 import QuickLinks from "../Components/QuickLinks";
 import AboutBikroy from "../Components/AboutBikroy";
+import Footer from "../Components/Footer";
 
 const Homepage = () => {
   return (
@@ -22,6 +23,7 @@ const Homepage = () => {
         <QuickLinks />
         <AboutBikroy />
       </div>
+      <Footer />
     </div>
   );
 };
