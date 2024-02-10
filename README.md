@@ -2,6 +2,6 @@
 
 # Bikcoy.com Clone
 
-![Preview]('public/Homepage-desktop.png')
+![Preview](https://raw.githubusercontent.com/HasibX2000/Bikroy-Clone/main/public/Homepage-desktop.png)
 
 ## Bikroy.com is a classified advertisement website operating in Bangladesh. It is available in both Bengali and English. The website is owned by a global tech firm – Saltside Technologies.
