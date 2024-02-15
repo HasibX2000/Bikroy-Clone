@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Components/Header";
 import Hero from "../Components/Hero";
 import Category from "../Components/Category";
@@ -6,13 +6,15 @@ import TestimonialCard from "../Components/TestimonialCard";
 import QuickLinks from "../Components/QuickLinks";
 import AboutBikroy from "../Components/AboutBikroy";
 import Footer from "../Components/Footer";
+import WelcomeWizard from "../Components/WelcomeWizard";
 
 const Homepage = () => {
+  const [showlogin, setShowLogin] = useState(true);
   return (
     <div className="relative">
       <div className="bg-brand">
-        <div className="container">
-          <Header />
+        <div className="container relative">
+          <Header showlogin={showlogin} setShowLogin={setShowLogin} />
           <Hero />
         </div>
       </div>
@@ -24,6 +26,8 @@ const Homepage = () => {
         <AboutBikroy />
       </div>
       <Footer />
+
+      {showlogin && <WelcomeWizard />}
     </div>
   );
 };

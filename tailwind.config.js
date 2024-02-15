@@ -22,6 +22,11 @@ export default {
         graytwoBrand: "#AFB7AD",
         brandTwo: "#10846F",
         pureBlack: "#2f3432",
+        facebookBlue: "#3B5999",
+        opBlack: "#00000099",
+      },
+      transformOrigin: {
+        xycenter: "translate(-50%, -50%)",
       },
     },
   },

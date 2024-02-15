@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import BikroyLogo from "../assets/logo.png";
 import ChatIcon from "../assets/chat.png";
@@ -6,7 +7,7 @@ import BarsIcon from "../assets/bars.png";
 import { Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
 
-const Header = () => {
+const Header = ({ showLogin, setShowLogin }) => {
   const [show, setShow] = useState(false);
   return (
     <nav className="flex justify-between py-2.5 ">
@@ -34,10 +35,13 @@ const Header = () => {
           <img className="w-8" src={ChatIcon} alt="Chat Icon" />{" "}
           <span className="hidden text-xs md:block">Chat</span>
         </Link>
-        <Link className="flex gap-2 items-center text-white text-sm">
+        <p
+          onClick={() => setShowLogin(!showLogin)}
+          className="flex gap-2 items-center text-white text-sm cursor-pointer"
+        >
           <img className="w-8" src={LoginIcon} alt="Login Icon" />{" "}
           <span className="hidden text-xs md:block">Login</span>
-        </Link>
+        </p>
         <button className="uppercase bg-yellowBrand px-3 text-sm rounded font-semibold text-grayBrand py-2.5 hidden md:block">
           Post your ad
         </button>
