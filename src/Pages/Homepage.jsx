@@ -7,28 +7,30 @@ import QuickLinks from "../Components/QuickLinks";
 import AboutBikroy from "../Components/AboutBikroy";
 import Footer from "../Components/Footer";
 import WelcomeWizard from "../Components/WelcomeWizard";
+import ThemeContext from "../Contexts/ThemeContext";
 
 const Homepage = () => {
-  const [showlogin, setShowLogin] = useState(true);
+  const [sLogin, setSLogin] = useState(false);
   return (
-    <div className="relative">
-      <div className="bg-brand">
-        <div className="container relative">
-          <Header showlogin={showlogin} setShowLogin={setShowLogin} />
-          <Hero />
+    <ThemeContext.Provider value={{ sLogin: sLogin, setSLogin: setSLogin }}>
+      <div className="relative">
+        <div className="bg-brand">
+          <div className="container relative">
+            <Header />
+            <Hero />
+          </div>
         </div>
+        <div className="container">
+          <span className="p-5 mt-16 block"></span>
+          <Category />
+          <TestimonialCard />
+          <QuickLinks />
+          <AboutBikroy />
+        </div>
+        <Footer />
+        {sLogin ? <WelcomeWizard /> : null}
       </div>
-      <div className="container">
-        <span className="p-5 mt-16 block"></span>
-        <Category />
-        <TestimonialCard />
-        <QuickLinks />
-        <AboutBikroy />
-      </div>
-      <Footer />
-
-      {showlogin && <WelcomeWizard />}
-    </div>
+    </ThemeContext.Provider>
   );
 };
 

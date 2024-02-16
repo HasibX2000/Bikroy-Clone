@@ -1,14 +1,17 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import BikroyLogo from "../assets/logo.png";
 import ChatIcon from "../assets/chat.png";
 import LoginIcon from "../assets/login.png";
 import BarsIcon from "../assets/bars.png";
 import { Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
+import ThemeContext from "../Contexts/ThemeContext";
 
-const Header = ({ showLogin, setShowLogin }) => {
+const Header = () => {
   const [show, setShow] = useState(false);
+  const { sLogin, setSLogin } = useContext(ThemeContext);
+
   return (
     <nav className="flex justify-between py-2.5 ">
       <div className="flex gap-4 items-center">
@@ -36,8 +39,8 @@ const Header = ({ showLogin, setShowLogin }) => {
           <span className="hidden text-xs md:block">Chat</span>
         </Link>
         <p
-          onClick={() => setShowLogin(!showLogin)}
           className="flex gap-2 items-center text-white text-sm cursor-pointer"
+          onClick={() => setSLogin(!sLogin)}
         >
           <img className="w-8" src={LoginIcon} alt="Login Icon" />{" "}
           <span className="hidden text-xs md:block">Login</span>
