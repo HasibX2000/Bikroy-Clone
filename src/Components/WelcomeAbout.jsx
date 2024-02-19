@@ -1,13 +1,9 @@
-import React, { useContext } from "react";
-import ThemeContext from "../Contexts/ThemeContext";
+import React from "react";
 import PostAd from "../assets/postad.svg";
 import FavAd from "../assets/favouritead.svg";
 import ManageAd from "../assets/managead.svg";
-import Button from "./Button";
 
 const WelcomeAbout = () => {
-  const { sLogin, setSLogin } = useContext(ThemeContext);
-
   return (
     <div className="w-full md:border-r md:pr-2">
       {/* Left  */}
@@ -31,9 +27,6 @@ const WelcomeAbout = () => {
           </li>
         </ul>
       </div>
-      <span onClick={() => setSLogin(!sLogin)}>
-        <Button text="Close" classes="mt-5" />
-      </span>
     </div>
   );
 };
